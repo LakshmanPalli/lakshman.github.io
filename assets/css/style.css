@@ -210,6 +210,12 @@ body.active { overflow: hidden; }
   border: 1px solid transparent;
   border-radius: var(--radius-4);
   transition: var(--transition-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Optional: Ensures responsiveness */
+  white-space: nowrap;
 }
 
 .btn-primary { border-color: var(--color-primary); }
