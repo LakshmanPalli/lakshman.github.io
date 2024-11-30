@@ -576,6 +576,31 @@ main { overflow-x: hidden; }
 
 .about .btn-secondary { margin-bottom: 10px; }
 
+/*-----------------------------------*\
+ * #EXpierence
+\*-----------------------------------*/
+
+.job-header {
+  display: flex;
+  justify-content: space-between; /* Ensures space between job title and logo */
+  align-items: center; /* Vertically aligns items in the center */
+}
+
+.company-logo {
+  width: 25px; /* Set the desired width */
+  height: 25px; /* Set the desired height */
+  object-fit: contain; /* Ensures the image scales proportionally */
+  margin-right: 5px; /* Adds space between logo and title */
+  display: inline-block; /* Ensures logo stays inline */
+  vertical-align: middle; /* Ensures it aligns with the text properly */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.job-title {
+  flex-grow: 1; /* Ensures the job title occupies available space */
+  margin: 0; /* Removes default margin */
+}
+
 
 
 
@@ -735,6 +760,59 @@ main { overflow-x: hidden; }
   color: var(--raw-seinna);
   text-decoration: underline;
   margin-inline: auto;
+}
+
+
+
+/*-----------------------------------*\
+ * #Achievements
+\*-----------------------------------*/
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.achievement-item {
+  padding: 0.5rem 0;
+}
+
+.certification-link {
+  line-height: 1;
+  text-decoration: none;
+  color: #333; /* Default text color */
+  font-weight: 500;
+  display: inline-block; /* Required for underline animation */
+  position: relative;
+  transition: color 0.3s ease;
+  margin: 0;
+}
+
+.certification-link:hover {
+  color: #007bff; /* Highlight color */
+}
+
+.certification-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: #007bff; /* Underline color */
+  position: absolute;
+  bottom: 0; /* Align underline directly beneath the text */
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.certification-link:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+.achievement-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
