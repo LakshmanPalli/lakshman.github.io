@@ -1475,6 +1475,28 @@ textarea.input-field {
   }
 
 
+  /**
+   * EDUCATION
+   */
+
+  .education-header {
+    display: flex;
+    justify-content: space-between; /* Aligns degree and tenure to the right */
+    align-items: center; /* Vertically centers the text */
+  }
+  
+  .degree {
+    font-size: 1rem;
+    color: #a8a8a8;
+    margin-left: 10px; /* Adds space between the school name and the degree */
+  }
+  
+  .tenure {
+    font-style: italic;
+    color: #848383;
+  }  
+
+
 
 
   /**
