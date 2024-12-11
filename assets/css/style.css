@@ -311,6 +311,13 @@ body.active {
   z-index: 1;
 }
 
+.section-spacing {
+  padding: 60px 0;
+  /* Top and bottom padding */
+  margin: 0 auto;
+  /* Center content horizontally */
+  margin-bottom: 40px;
+}
 
 
 
@@ -896,12 +903,12 @@ main {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
+  height: 3px;
   /* Thickness of the underline */
   background: #007bff;
   /* Underline color */
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   /* Align underline directly beneath the text */
   left: 0;
   transition: width 0.3s ease;
