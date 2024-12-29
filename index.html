@@ -101,7 +101,7 @@
 
           <h2 class="h2 hero-title">A Data Science Graduate</h2>
 
-          <a href="contact" class="btn btn-primary">Get in touch</a>
+          <a href="javascript:void(0);" class="btn btn-primary" data-target="contact">Get in touch</a>
 
         </div>
 
@@ -743,7 +743,7 @@
 
           <li>
             <a href="https://medium.com/@lakshman-palli/analyzing-red-bulls-sales-performance-insights-and-growth-opportunities-b40920c5981a"
-              class="project-card">
+              class="project-card" target="_blank">
 
               <figure class="card-banner">
                 <img src="./assets/images/redbull.webp" class="w-100"
@@ -760,7 +760,7 @@
           </li>
 
           <li>
-            <a href="https://github.com/LakshmanPalli/credit-approval" class="project-card">
+            <a href="https://github.com/LakshmanPalli/credit-approval" class="project-card" target="_blank">
 
               <figure class="card-banner">
                 <img src="./assets/images/credit-fraud.webp" class="w-100"
@@ -777,7 +777,7 @@
           </li>
 
           <li>
-            <a href="https://github.com/LakshmanPalli/Heart-Stroke-Prediction" class="project-card">
+            <a href="https://github.com/LakshmanPalli/Heart-Stroke-Prediction" class="project-card" target="_blank">
 
               <figure class="card-banner">
                 <img src="./assets/images/stroke.webp" class="w-100"
@@ -794,7 +794,7 @@
           </li>
 
           <li>
-            <a href="https://github.com/LakshmanPalli/morris-health-services-app" class="project-card">
+            <a href="https://github.com/LakshmanPalli/morris-health-services-app" class="project-card" target="_blank">
 
               <figure class="card-banner">
                 <img src="./assets/images/dmsd.webp" class="w-100"
@@ -811,7 +811,8 @@
           </li>
 
           <li>
-            <a href="https://github.com/LakshmanPalli/r-web-scraping-journal-analysis" class="project-card">
+            <a href="https://github.com/LakshmanPalli/r-web-scraping-journal-analysis" class="project-card"
+              target="_blank">
 
               <figure class="card-banner">
                 <img src="./assets/images/journal-web-scrape.webp" class="w-100"
@@ -1166,10 +1167,12 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+
   <!-- Smooth scrolling and active link code -->
   <script>
-    document.querySelectorAll('.navbar-link').forEach(link => {
-      link.addEventListener('click', (event) => {
+    // Smooth scrolling for navbar links and buttons with data-target
+    document.querySelectorAll('[data-target]').forEach(element => {
+      element.addEventListener('click', (event) => {
         const targetId = event.target.getAttribute('data-target');
         const targetSection = document.getElementById(targetId);
 
