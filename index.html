@@ -165,7 +165,7 @@
           </li>
 
           <li>
-            <a href="project" class="stats-card">
+            <a href="javascript:void(0);" class="stats-card" data-target="project">
 
               <div class="card-icon">
                 <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
@@ -181,7 +181,7 @@
           </li>
 
           <li>
-            <a href="achievements" class="stats-card">
+            <a href="javascript:void(0);" class="stats-card" data-target="achievements">
 
               <div class="card-icon">
                 <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
@@ -1173,7 +1173,7 @@
     // Smooth scrolling for navbar links and buttons with data-target
     document.querySelectorAll('[data-target]').forEach(element => {
       element.addEventListener('click', (event) => {
-        const targetId = event.target.getAttribute('data-target');
+        const targetId = event.currentTarget.getAttribute('data-target');
         const targetSection = document.getElementById(targetId);
 
         if (targetSection) {
